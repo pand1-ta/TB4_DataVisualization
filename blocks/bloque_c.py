@@ -81,7 +81,7 @@ def _p8(df: pd.DataFrame) -> go.Figure:
             showarrow=False,
             yanchor="bottom",
             font=dict(color=COLOR_LATAM, size=10),
-            bgcolor="rgba(255,255,255,0.8)",
+            bgcolor="rgba(0,0,0,0)",
         )
 
         # Etiqueta del valor de Perú a la derecha de la barra
@@ -103,8 +103,8 @@ def _p8(df: pd.DataFrame) -> go.Figure:
     fig.update_layout(
         title=f"Perú vs. promedio América Latina — {año}",
         height=500,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=20, r=40, t=60, b=20),
     )
     return fig
@@ -166,7 +166,7 @@ def _p9(df: pd.DataFrame) -> go.Figure:
         yaxis=dict(title="kWh por persona", showgrid=False),
         height=460,
         showlegend=False,
-        plot_bgcolor="white", paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=60, r=100, t=50, b=50),
     )
     return fig
