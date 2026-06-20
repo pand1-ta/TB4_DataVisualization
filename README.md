@@ -2,6 +2,15 @@
 
 **URL del dashboard en producción:** `https://tb4datavisualization-6nntn6wfsqxza8dx3rpjjx.streamlit.app/`  
 
+## Integrantes
+| Control | Ubicación |
+|---------|------------|
+| Jose Cespedes | U202211884  |
+| Jimena Quintana | U20201F576 |
+| Rodrigo Gamero | U20231b834 |
+| Joaquín Ruiz | U20201F678  |
+| Ricardo Tejada | U202113697  |
+
 ---
 
 ## Descripción
