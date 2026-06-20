@@ -120,8 +120,8 @@ def _p4_scatter(df: pd.DataFrame, year_sel: int) -> go.Figure:
         yaxis=dict(title="Electricidad de origen fósil (%)", range=[-2, 105], ticksuffix="%", showgrid=False),
         height=500,
         legend=dict(title="Región", orientation="v"),
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=60, r=40, t=70, b=50),
     )
     return fig
@@ -184,7 +184,7 @@ def _p5(df: pd.DataFrame) -> go.Figure:
         yaxis=dict(title="", showgrid=False),
         height=460,
         legend=dict(orientation="h", y=1.06, x=0),
-        plot_bgcolor="white", paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=160, r=40, t=60, b=50),
     )
     return fig
@@ -258,8 +258,8 @@ def _p6_mix(df: pd.DataFrame, pais_sel: str) -> go.Figure:
         yaxis=dict(title="Generación (TWh)", showgrid=False),
         legend=dict(title="Fuente", orientation="v"),
         height=480,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=60, r=40, t=70, b=50),
     )
     return fig
@@ -327,8 +327,8 @@ def _p7_divergente(df: pd.DataFrame) -> go.Figure:
         yaxis=dict(title="", showgrid=False),
         height=620,
         showlegend=False,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
         margin=dict(l=140, r=60, t=80, b=50),
     )
     return fig

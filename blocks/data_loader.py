@@ -44,12 +44,12 @@ COLORS_VECINOS = {
 
 def base_layout(**kwargs) -> dict:
     """
-    Devuelve un dict de layout con fondo blanco y sin grids.
+    Devuelve un dict de layout con fondo transparente y sin grids.
     Acepta kwargs para sobreescribir o añadir propiedades.
     """
     layout = dict(
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
         xaxis=dict(showgrid=False, zeroline=False),
         yaxis=dict(showgrid=False, zeroline=False),
     )

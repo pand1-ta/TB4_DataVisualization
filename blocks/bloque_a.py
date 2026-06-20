@@ -60,8 +60,8 @@ def _p1(df: pd.DataFrame) -> go.Figure:
         height=480,
         margin=dict(l=160, r=120, t=50, b=40),
         showlegend=False,
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
     )
     return fig
 
@@ -123,8 +123,8 @@ def _p2(df: pd.DataFrame, regiones_sel: list) -> go.Figure:
         height=460,
         margin=dict(l=60, r=240, t=50, b=40),
         legend=dict(title="Región", x=1.02, orientation="v"),
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
     )
     return fig
 
@@ -183,7 +183,7 @@ def _p3(df: pd.DataFrame, year_sel: int) -> go.Figure:
         showarrow=False,
         font=dict(size=12, color=COLOR_TREND),
         align="right",
-        bgcolor="rgba(255,255,255,0.85)",
+        bgcolor="rgba(0,0,0,0)",
         bordercolor=COLOR_TREND,
         borderwidth=1,
     )
@@ -203,8 +203,8 @@ def _p3(df: pd.DataFrame, year_sel: int) -> go.Figure:
         height=460,
         margin=dict(l=60, r=40, t=50, b=50),
         legend=dict(orientation="h", y=-0.12),
-        plot_bgcolor="white",
-        paper_bgcolor="white",
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
     )
     return fig
 
