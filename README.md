@@ -1,8 +1,6 @@
+URL dashboard en producción: pendiente
+
 # TB4 — Data Visualization · Energía Global
-
-**URL del dashboard en producción:** `https://[usuario].streamlit.app/`  
-
----
 
 ## Descripción
 
@@ -12,7 +10,7 @@ Dashboard interactivo construido sobre los datasets:
 - **Dataset B** — Global Data on Sustainable Energy 2000–2020 (Kaggle): 176 países × 21 años.
 
 Ambos datasets se fusionan mediante `merge` por `country + year`, generando un único archivo
-`data/merged.csv` con 47 columnas y cobertura 2000–2020.
+`data/merged.csv` con las columnas necesarias para las preguntas del dashboard.
 
 ---
 
@@ -27,7 +25,7 @@ TB4-DataViz/
 └── data/
     ├── merge.py           ← descarga y fusiona los dos datasets → merged.csv
     ├── owid-energy-data.csv        
-    ├── global-sustainable-energy.csv 
+    ├── global-data-on-sustainable-energy.csv 
     └── merged.csv                  (generado por merge.py)
 ```
 
@@ -50,9 +48,7 @@ python data/merge.py
 streamlit run app.py
 ```
 
-> El paso 3 descarga automáticamente los datasets desde sus URLs oficiales.  
-> Si el Dataset B no está disponible vía URL, colocarlo manualmente en  
-> `data/global-sustainable-energy.csv` antes de ejecutar `merge.py`.
+> El script `data/merge.py` fusiona los CSV locales ubicados en `data/`. Para reproducirlo, coloca `owid-energy-data.csv` y `global-data-on-sustainable-energy.csv` en esa carpeta antes de ejecutarlo.
 
 ---
 
